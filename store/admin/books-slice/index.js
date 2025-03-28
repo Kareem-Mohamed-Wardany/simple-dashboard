@@ -3,7 +3,6 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 const initialState = {
   isLoading: false,
   booksList: [],
-  pagination: {}
 };
 
 export const addNewBook = createAsyncThunk(
@@ -59,7 +58,6 @@ const AdminBooksSlice = createSlice({
       .addCase(fetchAllBooks.fulfilled, (state, action) => {
         state.isLoading = false;
         state.booksList = action.payload.data.Books;
-        state.pagination = action.payload.data.pagination;
       })
       .addCase(fetchAllBooks.rejected, (state) => {
         state.isLoading = false;

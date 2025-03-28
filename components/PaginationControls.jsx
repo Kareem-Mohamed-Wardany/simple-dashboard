@@ -7,7 +7,7 @@ import {
 } from "lucide-react";
 import PaginationButton from "./UI/PaginationButton";
 
-const PaginationControlls = ({
+const PaginationControls = ({
   totalPages,
   currentPage,
   pageSize,
@@ -62,4 +62,4 @@ const PaginationControlls = ({
   );
 };
 
-export default PaginationControlls;
+export default PaginationControls;

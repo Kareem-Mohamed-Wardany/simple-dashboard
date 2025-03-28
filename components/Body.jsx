@@ -5,17 +5,17 @@ import AddBook from "./AddBook";
 import InventoryChart from "./InventoryChart";
 import TableContent from "./TableContent";
 import NoData from "./NoData";
-import PaginationControlls from "./PaginationControlls";
+import PaginationControls from "./PaginationControls";
 import THead from "./THead";
 import SearchandAdd from "./SearchandAdd";
 
 const Body = () => {
   const dispatch = useDispatch();
+  const pageSize = 5;
   const [currentPage, setCurrentPage] = useState(1);
   const [sortConfig, setSortConfig] = useState({ key: null, direction: "asc" });
   const [filterText, setFilterText] = useState("");
   const [showPopup, setShowPopup] = useState(false);
-  const pageSize = 5;
 
   const { booksList } = useSelector((state) => state.adminBooks);
   const { isAdmin } = useSelector((state) => state.auth);
@@ -29,8 +29,8 @@ const Body = () => {
   const handleSort = (key) => {
     const direction =
       sortConfig.key === key && sortConfig.direction === "asc" ? "desc" : "asc";
-    setSortConfig({ key, direction });
-    setCurrentPage(1);
+    setSortConfig({ key, direction }); // Update Config
+    setCurrentPage(1); // Start from first Page
   };
 
   // Process books with filtering and sorting
@@ -126,7 +126,7 @@ const Body = () => {
             </table>
           </div>
           {/* Pagination */}
-          <PaginationControlls
+          <PaginationControls
             totalPages={totalPages}
             currentPage={currentPage}
             pageSize={pageSize}
