@@ -5,7 +5,7 @@ also adding pagination to the book list
 
 ## 🎥 Demo Video
 
-[![Watch the video](https://img.youtube.com/vi/Vqw9DIA4POg/maxresdefault.jpg)](https://www.youtube.com/watch?v=Vqw9DIA4POg)
+[![Watch the video](https://img.youtube.com/vi/HH_sIy1xdBg/maxresdefault.jpg)](https://www.youtube.com/watch?v=HH_sIy1xdBg)
 
 Click the image above to watch the demo!
 
@@ -27,13 +27,13 @@ Click the image above to watch the demo!
 1. **Clone the repository:**
 
    ```sh
-   git clone https://github.com/Kareem-Mohamed-Wardany/Travel-Agency-Client.git
+   git clone https://github.com/Kareem-Mohamed-Wardany/simple-dashboard.git
    ```
 
 2. **Navigate to the project folder:**
 
    ```sh
-   cd Travel-Agency-Client
+   cd simple-dashboard
    ```
 
 3. **Install dependencies:**
@@ -49,14 +49,4 @@ Click the image above to watch the demo!
 
 ## 🌍 Deployment
 
-The application can be deployed on **Vercel** for seamless performance.
-Ensure all environment variables are properly configured on the hosting platform.
-There is a separate repository for the backend, which handles business logic and database interactions. You can find it here: [Travel Agency Server](https://github.com/Kareem-Mohamed-Wardany/Travel-Agency-Server).
-
-## 🤝 Contributions
-
-Feel free to contribute to the project by submitting pull requests or reporting issues.
-
-## 📜 License
-
-This project is licensed under the **MIT License**.
+There is a separate repository for the backend, which handles business logic and database interactions. You can find it here: [Demo-Api](https://github.com/Kareem-Mohamed-Wardany/Demo-Api).
